@@ -39,7 +39,7 @@ class GenAI {
     const data: any = await res.json();
 
     if (!res.ok) {
-      new Error(data.error);
+      throw new Error(data.error);
     }
 
     const llmText: string | undefined =
