@@ -35,7 +35,7 @@ class GenAI {
     const data: any = await res.json();
 
     if (!res.ok) {
-      new Error(data);
+      throw new Error(data);
     }
 
     const llmResponse: Message = data.choices[0].message;
