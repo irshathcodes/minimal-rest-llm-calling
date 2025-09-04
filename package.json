@@ -5,7 +5,8 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "generate": "node --env-file=.env app.ts"
+    "openai": "node --env-file=.env minimal-openai.ts",
+    "gemini": "node --env-file=.env minimal-gemini.ts"
   },
   "keywords": [],
   "author": "",

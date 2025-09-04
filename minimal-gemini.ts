@@ -59,7 +59,7 @@ class GenAI {
 
 const ai = new GenAI({
   model: "gemini-2.0-flash",
-  apiKey: process.env.LLM_API_KEY!,
+  apiKey: process.env.GOOGLE_LLM_API_KEY!,
 });
 
 const rl = createInterface({input: process.stdin, output: process.stdout});
