@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "openai": "node --env-file=.env minimal-openai.ts",
-    "gemini": "node --env-file=.env minimal-gemini.ts"
+    "gemini": "node --env-file=.env minimal-gemini.ts",
+    "tool-calling": "node --env-file=.env tool-calling.ts"
   },
   "keywords": [],
   "author": "",
@@ -15,5 +16,8 @@
   "devDependencies": {
     "@types/node": "^24.3.0",
     "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "zod": "^4.1.8"
   }
 }
